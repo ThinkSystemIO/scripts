@@ -9,8 +9,8 @@ spec:
     - host: thinksystem.io
       http:
         paths:
-          - pathType: Prefix
-            path: /
+          - path: /*
+            pathType: ImplementationSpecific
             backend:
               service:
                 name: service-backend-proxy
