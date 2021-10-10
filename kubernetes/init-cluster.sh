@@ -2,7 +2,7 @@
 
 # Databases
 helm repo add bitnami https://charts.bitnami.com/bitnami
-helm upgrade --install service-database-mongo bitnami/mongodb
+helm upgrade --install service-database bitnami/mongodb
 
 # Backends
 helm upgrade --install -f ./helm/deploy/values.yaml backend-proxy ./helm/deploy --set name=backend-proxy
