@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Config
+kubectl apply -f ./config/rolebinding.yaml
+
 # Databases
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm upgrade --install service-database bitnami/mongodb

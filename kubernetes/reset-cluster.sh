@@ -1,3 +1,3 @@
 #!/bin/bash
 
-kubectl delete --all pod,deployment,service,ingress
+kubectl delete --all pod,deployment,service

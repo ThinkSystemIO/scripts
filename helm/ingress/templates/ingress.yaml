@@ -6,13 +6,13 @@ metadata:
     name: ingress-{{ .Values.name }}
 spec:
   rules:
-    - host: thinksystem.io
-      http:
+    # - host: thinksystem.io
+    - http:
         paths:
           - path: /*
             pathType: ImplementationSpecific
             backend:
               service:
-                name: service-backend-proxy
+                name: backend-proxy
                 port:
                   number: 80
